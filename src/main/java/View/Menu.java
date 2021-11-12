@@ -14,7 +14,7 @@ public class Menu {
 
 
         //Instancia de clase
-        Traductor tr = new Traductor();
+        Translator tr = new Translator();
 
         //Variables globales
         boolean exit = true;
