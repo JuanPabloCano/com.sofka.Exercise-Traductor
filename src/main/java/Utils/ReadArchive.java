@@ -3,7 +3,6 @@ package Utils;
 import Model.Dictionary;
 
 import java.io.*;
-import java.util.Map;
 
 public class ReadArchive {
     private String translation = "";
