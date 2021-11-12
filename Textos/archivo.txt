@@ -1,4 +1,7 @@
-Hola como esta
-Muy bien y tu
-Muy bien
-Gracias
+
+carro = car
+amor = love
+casa = house
+mujer = woman
+escritorio = desk
+casa = house

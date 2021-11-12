@@ -1,7 +1,4 @@
-package Classes;
-
-import java.io.*;
-import java.util.*;
+package Model;
 
 public class Dictionary {
 

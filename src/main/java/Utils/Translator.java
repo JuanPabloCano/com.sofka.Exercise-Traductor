@@ -1,19 +1,29 @@
-package Classes;
+package Utils;
 
 import java.util.*;
+import java.io.*;
 
 public class Translator {
 
     // Atributos encapsulados
     private String spanishWord, englishWord, searchWord;
-    private Map<String, String> dict = new HashMap<>();
+    public static String archive = "./Textos/archivo.txt";
+    public static Map <String, String> dict = new HashMap<>();
 
 
     // Método para añadir palabras al diccionario
     public void addWord(String spanishWord, String englishWord) {
-        this.spanishWord = spanishWord;
-        this.englishWord = englishWord;
-        this.dict.put(spanishWord, englishWord);
+        if (!dict.containsKey(spanishWord) && !dict.containsValue(englishWord)){
+            dict.put(spanishWord, englishWord);
+        }
+        try {
+            FileWriter writer = new FileWriter(archive, true);
+            writer.write("\r\n"+ spanishWord+ " = "+ englishWord);
+            writer.close();
+        }catch (IOException e){
+            System.out.println("ERROR");
+            e.getMessage();
+        }
     }
 
     //Método para imprimir todo el diccionario usando la expresión Lambda
@@ -33,7 +43,6 @@ public class Translator {
         return dict;
     }
 
-
     // Setters y Getters
 
     public String getSpanishWord() {
@@ -41,17 +50,14 @@ public class Translator {
     }
 
     public void setSpanishWord(String spanishWord) {
-
         this.spanishWord = spanishWord;
     }
 
     public String getEnglishWord() {
-
         return englishWord;
     }
 
     public void setEnglishWord(String englishWord) {
-
         this.englishWord = englishWord;
     }
 
@@ -63,11 +69,19 @@ public class Translator {
         this.searchWord = searchWord;
     }
 
-    public Map<String, String> getDict() {
+    public static String getArchive() {
+        return archive;
+    }
+
+    public static void setArchive(String archive) {
+        Translator.archive = archive;
+    }
+
+    public static Map<String, String> getDict() {
         return dict;
     }
 
-    public void setDict(Map<String, String> dict) {
-        this.dict = dict;
+    public static void setDict(Map<String, String> dict) {
+        Translator.dict = dict;
     }
 }
