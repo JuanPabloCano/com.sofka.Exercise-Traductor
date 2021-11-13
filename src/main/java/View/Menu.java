@@ -27,7 +27,9 @@ public class Menu {
         //Variables globales
         boolean exit = true;
         int selection;
-        String esp, ingl, searchWord;
+        String esp;
+        String ingl;
+        String searchWord;
 
         try {
             do {

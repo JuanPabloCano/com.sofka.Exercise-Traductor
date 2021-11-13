@@ -5,3 +5,5 @@ casa = house
 mujer = woman
 escritorio = desk
 casa = house
+espejo = mirror
+aceite = oil

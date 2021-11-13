@@ -6,8 +6,10 @@ import java.io.*;
 public class Translator {
 
     // Atributos encapsulados
-    private String spanishWord, englishWord, searchWord;
-    public static String archive = "./Textos/archivo.txt";
+    private String spanishWord;
+    private String englishWord;
+    private String searchWord;
+    public static final String archive = "./Textos/archivo.txt";
     public static Map <String, String> dict = new HashMap<>();
 
 
@@ -67,14 +69,6 @@ public class Translator {
 
     public void setSearchWord(String searchWord) {
         this.searchWord = searchWord;
-    }
-
-    public static String getArchive() {
-        return archive;
-    }
-
-    public static void setArchive(String archive) {
-        Translator.archive = archive;
     }
 
     public static Map<String, String> getDict() {
