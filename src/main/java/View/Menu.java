@@ -63,7 +63,7 @@ public class Menu {
 
         } catch (IOException e) {
             System.out.println("FATAL");
-            e.getMessage();
+            e.printStackTrace();
         }
     }
 }

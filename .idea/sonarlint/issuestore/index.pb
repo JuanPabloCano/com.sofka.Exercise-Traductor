@@ -6,7 +6,3 @@
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-T
-$src/main/java/Utils/ReadArchive.java,f\a\faf6149b50e420e196af8b40c38f3de9cf0eea45
-L
-src/main/java/Main/Main.java,2\4\243929e4b92a0324ddb716ad76c014731a5fec6f

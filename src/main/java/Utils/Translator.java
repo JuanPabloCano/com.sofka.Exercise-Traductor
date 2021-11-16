@@ -24,7 +24,7 @@ public class Translator {
             writer.close();
         }catch (IOException e){
             System.out.println("ERROR");
-            e.getMessage();
+            e.printStackTrace();
         }
     }
 
@@ -43,39 +43,5 @@ public class Translator {
             System.out.println(searchWord + " no se encuentra en el diccionario");
         }
         return dict;
-    }
-
-    // Setters y Getters
-
-    public String getSpanishWord() {
-        return spanishWord;
-    }
-
-    public void setSpanishWord(String spanishWord) {
-        this.spanishWord = spanishWord;
-    }
-
-    public String getEnglishWord() {
-        return englishWord;
-    }
-
-    public void setEnglishWord(String englishWord) {
-        this.englishWord = englishWord;
-    }
-
-    public String getSearchWord() {
-        return searchWord;
-    }
-
-    public void setSearchWord(String searchWord) {
-        this.searchWord = searchWord;
-    }
-
-    public static Map<String, String> getDict() {
-        return dict;
-    }
-
-    public static void setDict(Map<String, String> dict) {
-        Translator.dict = dict;
     }
 }

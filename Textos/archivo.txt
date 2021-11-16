@@ -7,3 +7,7 @@ escritorio = desk
 casa = house
 espejo = mirror
 aceite = oil
+mesa = table
+cama = bed
+cabeza = head
+tormenta = storm
